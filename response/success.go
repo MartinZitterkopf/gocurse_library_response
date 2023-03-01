@@ -14,7 +14,7 @@ type SuccessResponse struct {
 	Meta    *meta.Meta  `json:"meta,omitempty"`
 }
 
-func Ok(msg string, data interface{}, meta *meta.Meta, code int) Response {
+func Ok(msg string, data interface{}, meta *meta.Meta) Response {
 	return success(msg, data, meta, http.StatusOK)
 }
 
